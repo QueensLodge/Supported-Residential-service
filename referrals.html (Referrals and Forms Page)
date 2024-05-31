@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referrals and Forms - Queens Lodge</title>
+    <style>
+        /* Include your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Queens Lodge Supported Residential Services</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us and SRS</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="fees.html">Fees</a>
+            <a href="referrals.html">Referrals and Forms</a>
+        </nav>
+    </header>
+
+    <div class="container">
+    <section id="referrals">
+        <h2>Referrals and Forms</h2>
+        <h3>Check us out for yourself</h3>
+        <p>We could fill up pages as to why we think Queens Lodge is great, however nothing beats you experiencing it for yourself.</p>
+        <p>No SRS is the same which is what makes it difficult to compare them, so rather than try, we would like to invite you to come see for yourself. This is the only way you can really see if we are the best fit for your needs or not.</p>
+        <p>We've spent the last 26 Years making Queens Lodge an industry leader as a pension level facility and it would be our absolute pleasure to show you around.</p>
+        <p>Of course, inspections are by appointment only due to the nature of our facility. We need to make sure residents are not put out by any visitors looking around their home.</p>
+        <p>To book your appointment to visit Queens Lodge, call us on (03) 9465 0053. Alternatively, you can click on the "Contact Us" tab and send us a message and we will get back to you at our earliest convenience. We currently have a few vacancies but please keep in mind that because we have a limitation of 35 beds, there is a lot of interest in those rare placements.</p>
+        <p>We look forward to personally showing you around Queens Lodge.</p>
+        <p>If you wish to submit a referral to Queens Lodge, please click on the "Submit Referral" tab below to download the referral form. After completing it, you can upload the filled form and submit it to us using the form below.</p>
+        <a href="C:\Users\billy\Downloads\New Resident Referral Form (3).pdf" download class="button">Download Referral Form</a>
+        
+        <!-- Referral Upload Form -->
+        <form action="mailto:queenslodgeoffice@me.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="number">Number:</label>
+            <input type="tel" id="number" name="number"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+            <label for="referral_upload">Upload Completed Referral Form:</label>
+            <input type="file" id="referral_upload" name="referral_upload" accept=".pdf"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Queens Lodge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
