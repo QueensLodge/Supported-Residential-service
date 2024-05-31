@@ -158,54 +158,36 @@
         </section>
 
         <section id="referrals">
-            <h2>Referrals and Forms</h2>
-            <p>We could fill up pages as to why we think Queens Lodge is great, however nothing beats you experiencing it for yourself.</p>
-            <p>No SRS is the same which is what makes it difficult to compare them, so rather than try, we would like to invite you to come see for yourself. This is the only way you can really see if we are the best fir for your needs or not.</p>
-            <p>We've spent the last 26 Years making Queens Lodge an industry leader as a pension level facility and it would be our absolute pleasure to show you around.</p>
-            <p>Of Course, inspections are by appointment only due to the nature of our facility. We need to make sure residents are not put out by any visitors looking around their home.</p>
-            <p>To book your appointment to visit Queens Lodge, call us on (03) 9465 0053. Alternatively, you can click on the "Contact Us" tab and send us a message and we will get back to you at our earliest convenience. We currently have a few vacancies but please keep in mind that because we have a limitation of 35 beds, there is a lot of interest in those rare placements.</p>
-            <p>We look forward to personally showing you around Queens Lodge.</p>
-            <p>If you wish to submit a referral to Queens Lodge, please click on the "Submit Referral" tab below. You will be greeted with a form, this will need to be downloaded, completed and re-uploaded.</p>
-            </form>
-        </section>
-        
-        <!-- Second section: Contact Form -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form method="post" action="submit_form.php" enctype="multipart/form-data">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-        
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-        
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <h2>Referrals and Forms</h2>
+        <p>We could fill up pages as to why we think Queens Lodge is great, however nothing beats you experiencing it for yourself.</p>
+        <p>No SRS is the same which is what makes it difficult to compare them, so rather than try, we would like to invite you to come see for yourself. This is the only way you can really see if we are the best fit for your needs or not.</p>
+        <p>We've spent the last 26 Years making Queens Lodge an industry leader as a pension level facility and it would be our absolute pleasure to show you around.</p>
+        <p>Of Course, inspections are by appointment only due to the nature of our facility. We need to make sure residents are not put out by any visitors looking around their home.</p>
+        <p>To book your appointment to visit Queens Lodge, call us on (03) 9465 0053. Alternatively, you can click on the "Contact Us" tab and send us a message and we will get back to you at our earliest convenience. We currently have a few vacancies but please keep in mind that because we have a limitation of 35 beds, there is a lot of interest in those rare placements.</p>
+        <p>We look forward to personally showing you around Queens Lodge.</p>
+        <p>If you wish to submit a referral to Queens Lodge, please download the referral form below, fill it out, and email it to us at queenslodgeoffice@me.com.</p>
+        <a href="New%20Resident%20Referral%20Form%20(3).pdf" download><button>Download Referral Form</button></a>
+    </section>
+    
+    <!-- Second section: Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-                <h3>Submit a Referral</h3>
-        
-                <label for="referralForm">Upload Referral Form:</label><br>
-                <input type="file" id="referralForm" name="referralForm" accept=".pdf"><br><br>
-        
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-        
-        <footer>
-            &copy; 2024 Queens Lodge Supported Residential Services
-        </footer>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-    <script>
-        // JavaScript to display the selected file name
-        document.getElementById('referralFile').addEventListener('change', function() {
-            var fileInput = document.getElementById('referralFile');
-            var fileNameDisplay = document.getElementById('fileNameDisplay');
-            if (fileInput.files.length > 0) {
-                fileNameDisplay.textContent = 'Selected file: ' + fileInput.files[0].name;
-            } else {
-                fileNameDisplay.textContent = 'No file selected';
-            }
-        });
-    </script>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="button" value="Send Email" onclick="window.open('mailto:queenslodgeoffice@me.com?subject=Referral Form Submission&body=Please find attached the completed referral form. Thank you.')">
+        </form>
+    </section>
+    
+    <footer>
+        &copy; 2024 Queens Lodge Supported Residential Services
+    </footer>
 </body>
 </html>
